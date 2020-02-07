@@ -1,0 +1,7 @@
+1.在浏览器打开开发者工具
+清楚其他console的内容
+一.var ws = new WebSocket('ws://127.0.0.1:8888');
+二.ws.onmessage = function(data){
+	console.log(data.data)
+}
+三.ws.send('发送内容');
